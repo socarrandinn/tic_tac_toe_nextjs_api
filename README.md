@@ -44,6 +44,7 @@ Donde "partidaId" es el identificador único de la partida generada por la API. 
 
 el bot utiliza el siguiente método "moveForWin" para jugar para ganar, ademas de impedir al usuario ganar, en caso de tener una jugada ganadora en el siguiente movimiento, el metodo retorna el tablero actualizado, además del movimiento a registrar en el historial
 
+```json
 export const moveForWin = (tablero: string[], player: JUGADOR_ENUM | '-') => {
   let possibleWins = [];
   let otherPlayer = OtherPlayer(player);
@@ -171,4 +172,5 @@ export const moveForWin = (tablero: string[], player: JUGADOR_ENUM | '-') => {
     }
   }
 }
+```
 
