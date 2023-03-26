@@ -1,8 +1,6 @@
-¡Claro! Aquí tienes el README actualizado con los cambios que solicitaste:
-
 # API de Tic Tac Toe con Next.js
 
-Esta es una API desarrollada con Next.js que te permite jugar al juego de Tic Tac Toe a través de una llamada POST a la ruta `/api/tic-tac-toe/play`. La API generará automáticamente un identificador único para cada partida y almacenará el estado actual del tablero en memoria. 
+Esta es una API desarrollada con Next.js que te permite jugar al juego de Tic Tac Toe a través de una llamada POST a la ruta `/api/tic-tac-toe/play`. La API generará automáticamente un identificador único para cada partida y almacenará el estado actual del tablero en memoria. Dicha API se usa en conjunto al frontend en Reactjs, url proyecto https://github.com/socarrandinn/tic-tac-toe
 
 ## Uso
 
