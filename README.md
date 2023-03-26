@@ -13,10 +13,12 @@ Para comenzar una nueva partida, envía una petición POST al endpoint `/api/tic
 	"partidaId": "",
 	"payload": {}
 } 
+```
 o
+```json
 {
-  "payload": {}
-}
+	"payload": {}
+} 
 ```
 
 El valor de "partidaId" debe ser una cadena vacía al inicio de una nueva partida. El valor de "payload" también debe ser un objeto vacío al principio.
@@ -25,13 +27,15 @@ Si la creación de la partida es exitosa, la API devuelve un objeto JSON con la 
 
 ```json
 {
-	"partidaId": "49a0b2e7-4d4b-4c79-a3f2-1adfdc19b96f",
+	
 	"payload": {
-		"tablero": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
-		"currentPlayer": "X",
-		"winner": null,
+	"partidaId": "49a0b2e7-4d4b-4c79-a3f2-1adfdc19b96f",
+	"estadoTablero": ["-", "-", "-", "-", "-", "-", "-", "-", "-"],
+	"currentPlayer": "X",
+	"winner": null,
         "isBot": true,
-        "historial": []
+        "historial": [],
+	"siguienteMovimiento": null
 	}
 }
 ```
