@@ -40,9 +40,9 @@ Si la creación de la partida es exitosa, la API devuelve un objeto JSON con la 
 }
 ```
 
-Donde "partidaId" es el identificador único de la partida generada por la API. El valor de "tablero" es un array que representa el estado actual del tablero. El valor de "currentPlayer" indica quién es el jugador actual. El valor de "winner" indica si hay un ganador y quién es. El valor de "isBot" indica si el siguiente movimiento será realizado por la máquina. El valor de "historial" se guarda los movimientos.
+Donde "partidaId" es el identificador único de la partida generada por la API. El valor de "tablero" es un array que representa el estado actual del tablero. El valor de "currentPlayer" indica quién es el jugador actual. El valor de "winner" indica si hay un ganador y quién es. El valor de "isBot" indica si el siguiente movimiento será realizado por la máquina. En valor de "historial" se guarda los movimientos.
 
-el bot utiliza el siguiente método "moveForWin" para jugar para ganar, ademas de impedir al usuario ganar, en caso de tener una jugada ganadora en el siguiente movimiento, el metodo retorna el tablero actualizado, además del movimiento a registrar en el historial
+el bot utiliza el siguiente método "moveForWin" para jugar para ganar, además de impedir al usuario ganar, en caso de tener una jugada ganadora en el siguiente movimiento, el método retorna el tablero actualizado, además del movimiento a registrar en el historial.
 
 ```javascript
 export const moveForWin = (tablero: string[], player: JUGADOR_ENUM | '-') => {
